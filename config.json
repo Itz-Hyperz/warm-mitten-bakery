@@ -1,0 +1,15 @@
+{
+    "domain": "https://warmmittenbakery.com",
+    "port": 5079,
+    "debugMode": true,
+    "seoKeywords": "bakery, Harbor Springs, Michigan, cakes, cookies, custom desserts, wedding cakes, The Warm Mitten Bakery",
+    "business": {
+        "name": "The Warm Mitten Bakery",
+        "tagline": "Home-baked sweetness from the tip of the Mitten",
+        "location": "Harbor Springs, MI 49740",
+        "phone": "(231) 459-8950",
+        "email": "hello@thewarmmittenbakery.com",
+        "established": "2024",
+        "themeColor": "#e91e8c"
+    }
+}

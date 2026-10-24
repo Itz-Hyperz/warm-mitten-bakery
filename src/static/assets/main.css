@@ -1,0 +1,266 @@
+/* The Warm Mitten Bakery — Main Styles */
+
+:root {
+    --theme-color: #e91e8c;
+    --theme-dark: #b01068;
+    --theme-soft: #fff0f7;
+    --text-dark: #2d2a2e;
+    --cream: #fffaf5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", system-ui, sans-serif;
+    color: var(--text-dark);
+    background: var(--cream);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Navbar */
+.navbar-bakery {
+    background: #111;
+    padding: 0.75rem 0;
+}
+
+.navbar-bakery .navbar-brand {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 1.25rem;
+}
+
+.navbar-bakery .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.navbar-bakery .nav-link:hover {
+    color: var(--theme-color) !important;
+}
+
+.navbar-logo {
+    height: 42px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1a28 50%, #1a1a1a 100%);
+    color: #fff;
+    padding: 5rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    max-width: 280px;
+    width: 70%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 8px 24px rgba(233, 30, 140, 0.35));
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero .tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.75rem;
+}
+
+.btn-bakery {
+    background: var(--theme-color);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-bakery:hover {
+    background: var(--theme-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-bakery {
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
+    font-weight: 700;
+    padding: 0.7rem 1.6rem;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.btn-outline-bakery:hover {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title h2 {
+    font-size: 2.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.section-title .underline {
+    width: 60px;
+    height: 4px;
+    background: var(--theme-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.bg-soft {
+    background: var(--theme-soft);
+}
+
+/* Cards */
+.feature-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.75rem;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(233, 30, 140, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(233, 30, 140, 0.12);
+}
+
+.feature-card .icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--theme-soft);
+    color: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Menu items */
+.menu-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border-left: 4px solid var(--theme-color);
+}
+
+.menu-item h4 {
+    font-size: 1.1rem;
+    margin: 0 0 0.15rem;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* About */
+.about-text {
+    font-size: 1.05rem;
+}
+
+.badge-pill {
+    display: inline-block;
+    background: var(--theme-soft);
+    color: var(--theme-dark);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    margin: 0.25rem;
+}
+
+/* Contact */
+.contact-box {
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.contact-box a {
+    color: var(--theme-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.contact-box .fa-solid {
+    color: var(--theme-color);
+    width: 1.4rem;
+}
+
+/* Footer */
+.site-footer {
+    background: #111;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0;
+}
+
+.footer-logo {
+    height: 56px;
+    width: auto;
+}
+
+/* Utility */
+.text-theme {
+    color: var(--theme-color) !important;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3.5rem 0 3rem;
+    }
+    .hero-logo {
+        max-width: 200px;
+    }
+}

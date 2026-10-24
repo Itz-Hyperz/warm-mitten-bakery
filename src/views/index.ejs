@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= business.name %> | Harbor Springs, MI</title>
+    <meta property="og:title" content="<%= business.name %> | Harbor Springs, MI" />
+    <link rel="icon" href="/assets/logo.png">
+    <meta property="og:image" content="/assets/logo.png">
+    <meta name="theme-color" content="<%= business.themeColor %>">
+    <meta name="description" content="<%= business.tagline %>. Custom cakes, cookies, and desserts in Harbor Springs, Michigan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="<%= business.tagline %>. Custom cakes, cookies, and desserts in Harbor Springs, Michigan." />
+    <meta name="keywords" content="<%= config.seoKeywords %>" />
+</head>
+<body>
+    <%- include('_header') %>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-bakery sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/assets/logo.png" alt="Logo" class="navbar-logo">
+                <span class="d-none d-sm-inline">The Warm Mitten</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#specialties">Specialties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Favorites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <img src="/assets/logo.png" alt="<%= business.name %>" class="hero-logo animate__animated animate__fadeInDown">
+            <h1 class="animate__animated animate__fadeInUp"><%= business.name %></h1>
+            <p class="tagline animate__animated animate__fadeInUp animate__delay-1s"><%= business.tagline %></p>
+            <div class="animate__animated animate__fadeInUp animate__delay-1s">
+                <a href="#order" class="btn btn-bakery me-2 mb-2">Place an Order</a>
+                <a href="#menu" class="btn btn-outline-light mb-2" style="border-radius:50px;font-weight:700;padding:0.7rem 1.6rem;">See Favorites</a>
+            </div>
+            <p class="mt-3 small opacity-75">Established <%= business.established %> · Harbor Springs, Michigan</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Welcome to the Mitten</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center about-text">
+                    <p>
+                        We're a Northern Michigan home-based bakery specializing in baked goods, custom desserts, and celebration cakes.
+                        From birthday and wedding cakes to cupcakes, cookies, and entremets — we bake with care so every order feels personal.
+                    </p>
+                    <p class="mb-4">
+                        Whether you're local to Harbor Springs or visiting for the weekend, let us sweeten your day.
+                    </p>
+                    <span class="badge-pill">Women-owned</span>
+                    <span class="badge-pill">Custom cakes</span>
+                    <span class="badge-pill">Delivery available</span>
+                    <span class="badge-pill">Military discount</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties -->
+    <section id="specialties" class="section bg-soft">
+        <div class="container">
+            <div class="section-title">
+                <h2>What We Bake</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-cake-candles"></i></div>
+                        <h3>Custom Cakes</h3>
+                        <p class="mb-0">Birthday, wedding, graduation, baby shower — layered cakes, themed designs, and flavors made to order.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-cookie-bite"></i></div>
+                        <h3>Cookies & Treats</h3>
+                        <p class="mb-0">Classic chocolate chip, seasonal specialties, and bite-sized sweets perfect for sharing or gifting.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-cheese"></i></div>
+                        <h3>Specialty Desserts</h3>
+                        <p class="mb-0">Cheesecakes, mousse cakes, brownies, entremets, and more — for the days that deserve something extra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Favorites -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Favorites</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="menu-item">
+                        <div>
+                            <h4>Layered Celebration Cakes</h4>
+                            <p>Brownie, cheesecake, mousse &amp; more — custom flavors and finishes</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div>
+                            <h4>Cupcake Assortments</h4>
+                            <p>White, chocolate, blueberry lemon, and seasonal rotations</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div>
+                            <h4>Chocolate Ganache Cakes</h4>
+                            <p>Rich chocolate with smooth ganache — a crowd favorite</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div>
+                            <h4>Custom Character &amp; Theme Cakes</h4>
+                            <p>Sculpted details, fondant work, and made-to-match designs</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div>
+                            <h4>Cookies by the Dozen</h4>
+                            <p>Perfect for parties, offices, and care packages</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-muted mt-3 small">Menu items and availability vary — ask about seasonal specials!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA -->
+    <section id="order" class="section bg-soft">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ready to Order?</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <p class="mb-4">
+                        Custom orders are our specialty. Reach out with your date, guest count, and flavor ideas —
+                        we'll help you plan the perfect dessert.
+                    </p>
+                    <a href="tel:+12314598950" class="btn btn-bakery me-2 mb-2"><i class="fa-solid fa-phone me-2"></i>Call Us</a>
+                    <a href="mailto:hello@thewarmmittenbakery.com" class="btn btn-outline-bakery mb-2"><i class="fa-solid fa-envelope me-2"></i>Email Us</a>
+                    <p class="mt-3 small text-muted">Please order celebration cakes at least a few days in advance when possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-box">
+                        <h3 class="mb-3" style="font-family:'Playfair Display',serif;">The Warm Mitten Bakery</h3>
+                        <p class="mb-3"><i class="fa-solid fa-location-dot me-2"></i> Harbor Springs, MI 49740</p>
+                        <p class="mb-3"><i class="fa-solid fa-phone me-2"></i> <a href="tel:+12314598950"><%= business.phone %></a></p>
+                        <p class="mb-3"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:<%= business.email %>"><%= business.email %></a></p>
+                        <p class="mb-0"><i class="fa-solid fa-house me-2"></i> Home-based bakery · Pickup &amp; delivery options</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('_footer') %>
+</body>
+</html>
